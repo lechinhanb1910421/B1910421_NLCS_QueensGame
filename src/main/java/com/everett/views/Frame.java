@@ -3,8 +3,6 @@ package com.everett.views;
 import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.Image;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -22,20 +20,19 @@ public class Frame extends JFrame {
     public JButton exiButton;
     private ImageIcon icon;
     public static Thread createEntityThread;
-    public static final Logger LOGGER = Logger.getLogger(Frame.class.getName());
-    public static FileHandler fileHandler;
+
     static {
         createEntityThread = new Thread(() -> {
             try {
                 ENTITY = Persistence.createEntityManagerFactory("queengame");
             } catch (Exception e) {
-
             }
         });
         createEntityThread.start();
     }
 
     private Frame() {
+
         cards = new CardLayout();
         this.setSize(new Dimension(1200, 950));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,6 +53,6 @@ public class Frame extends JFrame {
         Frame game = new Frame();
         game.setLocationRelativeTo(null);
         game.setVisible(true);
-    }
 
+    }
 }

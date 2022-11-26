@@ -13,7 +13,7 @@
         <class>com.everett.models.Record</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="POSTGRES_CONN_URL" /> <!-- DB URL -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://YOUR_HOST:CONN_PORT/DB_NAME" /> <!-- DB URL -->
             <property name="javax.persistence.jdbc.user" value="POSTGRES_USER" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="POSTGRES_PASSWORD" /> <!-- DB Password -->
 

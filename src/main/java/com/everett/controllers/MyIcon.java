@@ -10,7 +10,7 @@ public class MyIcon {
         public static ImageIcon QUEEN = null;
         public static ImageIcon CHEEMS = null;
         public static ImageIcon GANYU = null;
-        public static ImageIcon CHOCOLATE = null;
+        public static ImageIcon SUN = null;
         static {
                 try {
                         QUEEN = new ImageIcon(ImageIO
@@ -19,8 +19,8 @@ public class MyIcon {
                                         .read(new File("src/main/resources/pictures/cheems.png")));
                         GANYU = new ImageIcon(ImageIO
                                         .read(new File("src/main/resources/pictures/ganyu.png")));
-                        CHOCOLATE = new ImageIcon(ImageIO
-                                        .read(new File("src/main/resources/pictures/chocolate.png")));
+                        SUN = new ImageIcon(ImageIO
+                                        .read(new File("src/main/resources/pictures/sun.png")));
                 } catch (IOException e) {
                 }
 

@@ -55,7 +55,7 @@ public class SandboxPage extends JPanel {
     public JSlider aS_speedSlider;
     public Color boardBGColor = MyColor.DARK_BLUE_CTNER;
     public Color boardBtnColor = MyColor.DARK_BLUE;
-    private ImageIcon[] pieceIcons = { MyIcon.QUEEN, MyIcon.CHEEMS, MyIcon.GANYU, MyIcon.CHOCOLATE };
+    private ImageIcon[] pieceIcons = { MyIcon.QUEEN, MyIcon.CHEEMS, MyIcon.GANYU, MyIcon.SUN };
     private Color[] boardColors = { MyColor.DARK_BLUE, MyColor.BROWN, MyColor.BLACK, MyColor.DARK_GREEN };
     private Color[] boardBackgroudColors = { MyColor.DARK_BLUE_CTNER, MyColor.BROWN_CTNER, MyColor.BLACK_CTNER,
             MyColor.DARK_GREEN_CTNER };
@@ -242,7 +242,7 @@ public class SandboxPage extends JPanel {
         cIcon_title.setPreferredSize(new Dimension(120, 30));
         cIcon_title.setHorizontalAlignment(JLabel.CENTER);
 
-        String[] cIcon_options = { "Queen", "Chemes", "Ganyu", "Chocolate" };
+        String[] cIcon_options = { "Queen", "Chemes", "Ganyu", "Sun" };
 
         cIcon_iconBox = new JComboBox<>(cIcon_options);
         cIcon_iconBox.setFont(new Font("Comic Sans MS", Font.BOLD, 19));
